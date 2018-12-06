@@ -12,7 +12,7 @@ Note that the FusedLasso package is not maintained on the CRAN anymore. You can 
 
 
 ## Usage
-### SepLogit_Fused, SepLogit_DataShared, SepLogit_Red and SepLogit_Indep
+### SepLogit_Fused, SepLogit_DataShared, SepLogit_Ref and SepLogit_Indep
 #### Arguments
 * **data** : a matrix whose last column corresponds to a categorical variable that defines the strata.
 * **adap** : adapt = FALSE corresponds to the standard version of the methods and adapt = TRUE corresponds to the adaptive version of the method.
