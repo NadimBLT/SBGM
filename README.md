@@ -1,11 +1,16 @@
 # SBGM
 Stratified Binary Graphical Models
 
-SepLogit_DataShared, SepLogit_Fused, SepLogit_Ref, SepLogit_Indep and Guo are used to estimate several binary graphical models.\\
+SepLogit_DataShared, SepLogit_Fused, SepLogit_Ref, SepLogit_Indep and Guo are used to estimate several binary graphical models.
+
 SepLogit_Indep is based on the SepLogit approach and estimates the models independent way by applying the seplogit approach on each stratum separately.
+
 Guo is based on the pseudo like-lihood method and estimates the models in a semi-joint way using a multiplicative decomposition of parameters.
+
 SepLogit_Ref is based on the seplogit approach and estimates the models in a semi-joint way by choosing a reference stratum a priori and by using an additive decomposition of parameters.
+
 SepLogit_Fused is based on the seplogit approach and estimates the models in a joint way using the fused penalty.
+
 SepLogit_Datashared is based on the seplogit approach and estimates the models in a joint way using the DataShared method.
 
 ## Packages required 
