@@ -1,9 +1,10 @@
 
 
 
-Function_Guo    = function(simData_K)
+Function_Guo    = function(data)
 {
   
+	simData_K    <-data
 	non_zero     <-recup_nonzero(simData_K)
 	lambda.max   <-choix_lambda_max(simData_K)
 	lambda.min   <-0.001
