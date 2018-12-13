@@ -34,13 +34,13 @@ Note that the FusedLasso package and the BMN package are not maintained on the C
 * **standardize** : If True, the original variables are standardized. Default is standardize=FALSE.
 
 #### Value
-* **MIN**         : graphical models returned by the SepLogit_MIN and BIC critera (output array, of dimension p x p x K, is the number of variables and K is the number of strata).  
-* **MAX**         : graphical models returned by the SepLogit_MAX and BIC critera (output array, of dimension p x p x K, is the number of variables and K is the number of strata).
+* **MIN**         : graphical models returned by the SepLogit_MIN and BIC critera (output array, of dimension p x p x K, p is the number of variables and K is the number of strata).  
+* **MAX**         : graphical models returned by the SepLogit_MAX and BIC critera (output array, of dimension p x p x K, p is the number of variables and K is the number of strata).
 
 ### Function_Guo
 #### Arguments
 * **data**        : input matrix, of dimension n x (p + 1). n is the number of observations and (p + 1) n is the number of variables,                         where the first p columns correspond to the p binary variables and the last column corresponds to a categorical                           variable defining the strata.
 
 #### Value
-* **BIC**         : graphical models returned by BIC criterion (output array, of dimension p x p x K, is the number of variables and K is the number of strata).
+* **BIC**         : graphical models returned by BIC criterion (output array, of dimension p x p x K, p is the number of variables and K is the number of strata).
 
