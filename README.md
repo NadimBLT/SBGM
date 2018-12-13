@@ -1,7 +1,7 @@
 # SBGM
 Stratified Binary Graphical Models
 
-SepLogit_DataShared, SepLogit_Fused, SepLogit_Ref, SepLogit_Indep and Guo are used to estimate several binary graphical models defined on several strata.
+Functions SepLogit_DataShared (available in file SepLogit-Ref-DataShared.R), SepLogit_Fused (available in file SepLogit_Fused.R),  SepLogit_Ref (available in file SepLogit-Ref-DataShared.R), SepLogit_Indep (available in file SepLogit_Indep) and Guo (available in file Function_Guo.R) are used to estimate several binary graphical models defined on several strata.
 
 SepLogit_Indep is based on the SepLogit approach and estimates the models in an independent way by applying the seplogit approach on each stratum separately.
 
@@ -12,6 +12,8 @@ SepLogit_Ref is based on the seplogit approach and estimates the models in a sem
 SepLogit_Fused is based on the seplogit approach and estimates the models in a joint way using the fused penalty.
 
 SepLogit_Datashared is based on the seplogit approach and estimates the models in a joint way using the DataShared method.
+
+See Illustr.R for a simple example illustrating the use of these functions.
 
 See https://arxiv.org/pdf/1709.10298.pdf for more details.
 ## Packages required 
