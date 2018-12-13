@@ -86,7 +86,8 @@ Function_Guo    = function(simData_K)
   	aic[j]  <-(-2)*sum_pL+2*coef_nonul
   	aicVV[j]<-(-2)*sum_pL/2+2*coef_nonul
 }
-	return(list(BIC=Theta_nonbiais[,,,which.min(bic)], Theta_nonbiais[,,,which.min(bicVV)], Theta_nonbiais, bic, bicVV))  
+	#return(list(BIC=Theta_nonbiais[,,,which.min(bic)], Theta_nonbiais[,,,which.min(bicVV)], Theta_nonbiais, bic, bicVV))  
+	return(list(BIC=Theta_nonbiais[,,,which.min(bic)]))
 }
 
 
