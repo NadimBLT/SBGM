@@ -223,7 +223,7 @@ SepLogit_DataShared <-function(data,adap,standardize=FALSE){
   
   for (kp in 1:p)
   { 
-cat(kp,"\n")
+
     Theta_BIC[[kp]]  = matrix(Inf, N_Str, p)
     
     Covars   = X[,-kp]
