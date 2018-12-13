@@ -16,7 +16,7 @@ source(paste0(path_repository,"SepLogit-Indep.R"))
 #source(paste0(path_repository,"Fonctions_For_Guo.R"))
 #source(paste0(path_repository,"Function_Guo.R"))
 
-load(paste0(path_repository,"/M-3NN-R-0.25.Rdata"))
+load(paste0(path_repository,"/M-3NN-R-0.5.Rdata"))
 Data=fichier[[2]]
 head(Data)
 
