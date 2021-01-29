@@ -96,10 +96,12 @@ screen.RefLasso.GLMs.ITCPT = function(X, y, Z, p=ncol(X), N_Str=max(Z), family =
   calX.Hier=as.matrix(calX.Hier)
   IND = which(calX.Hier!=0,arr.ind=TRUE)
   calX.Hier = sparseMatrix(i = IND[,1], j = IND[,2] , x= calX.Hier[IND])
+  N_Str0=N_Str
   N_Str=N_Str-1
+  ncs0=ncs
   ncs=ncs[-1]
   tauks     = rep(1,N_Str)
-  if (Balanced == F) {tauks = sqrt(N_Str)*sqrt(ncs/sum(ncs))} # so that tauks=1 in the balanced case
+  if (Balanced == F) {tauks = sqrt(N_Str0)*sqrt(ncs/sum(ncs0))} # so that tauks=1 in the balanced case
   
   if (is.null(wLambda1)) {wL1 = rep(1, p)}else {wL1 = wLambda1}
   if (is.null(wLambda2)) {wL2 = rep(tauks, each=p+1)}else {wL2 = wLambda2}
@@ -302,7 +304,7 @@ SepLogit_Ref <-function(data,adap,standardize=FALSE)
     if(adap==TRUE){
       calCoef  =glm(respon~calX-1, family="binomial")$coef
       
-      tempo   = compute.alpha.beta.bar.DELTA(calCoef, p, N_Str-1, func=median_VV)
+      tempo   = compute.alpha.beta.bar.DELTA(c(rep(0,p),calCoef), p, N_Str, func=median_VV)
       
       pdsLam1 = 1/abs(tempo[[1]][-1])
       pdsLam2 = 1/abs(as.numeric(t(tempo[[2]])))
